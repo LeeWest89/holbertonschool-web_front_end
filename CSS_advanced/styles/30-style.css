@@ -678,7 +678,7 @@ a:active {
 }
 
 .card-work .card-title {
-	align-items: center;
+	text-align: center;
 	margin: 0;
 	opacity: 0;
 	height: 100%;
