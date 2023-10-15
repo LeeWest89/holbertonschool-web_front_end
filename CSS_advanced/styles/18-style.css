@@ -386,6 +386,15 @@ template {
 	--nav-item-link-hover: var(--color-primary);
 }
 
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
 .navbar-menu {
 	float: right;
 }
@@ -401,7 +410,7 @@ template {
 	font-family: var(--nav-item-font-family);
 	font-weight: var(--nav-item-font-weight);
 	font-size: var(--nav-item-font-size);
-	letter-spacing: var(--nav-item-font-size);
+	letter-spacing: var(--nav-item-letter-spacing);
 	display: var(--nav-item-display);
 	margin: var(--nav-item-margin);
 }
@@ -413,15 +422,6 @@ template {
 
 .nav .nav-link:hover {
 	color: var(--nav-item-link-hover)
-}
-
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
-html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
 }
 
 .card-category {
