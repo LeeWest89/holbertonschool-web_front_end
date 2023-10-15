@@ -454,6 +454,7 @@ html {
 	background-color: var(--color-white);
 	width: 0;
 	height: 0.2rem;
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -610,7 +611,7 @@ a:active {
 	color: var(--button-hover-color);
 	text-decoration: var(--button-hover-text-decoration);
 	background-color: var(--button-hover-background);
-	transition-duration: var(--transition-duration);
+	transition: var(--transition-duration);
 	transition-property: color, background-color;
 }
 
@@ -675,6 +676,7 @@ a:active {
 	left: -0.1rem;
 	right: -0.1rem;
 	z-index: 1;
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
@@ -708,6 +710,15 @@ a:active {
 	content: "";
 }
 
+.card-work:hover .card-image {
+	transform: scale(1.2);
+}
+
+.card-work:hover .card-outer {
+	transform: scale(0.95);
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
 .card-testimonial .card-quote {
 	position: relative;
 }
@@ -720,23 +731,6 @@ a:active {
 	color: #efeded;
 	font-size: 10rem;
 	z-index: -1;
-}
-
-.card-work:hover .card-image {
-	transform: scale(1.2);
-	transition: var(–transition-duration) var(transition-cubic-bezier);
-}
-
-.card-work:hover .card-outer {
-	transform: scale(0.95)
-}
-
-.nav .nav-link::before {
-	transition: var(–transition-duration) var(transition-cubic-bezier);
-}
-
-.card-work .card-inner {
-	transition: var(–transition-duration) var(transition-cubic-bezier);
 }
 
 h1, h2, h3, h4, h5, h6 {
