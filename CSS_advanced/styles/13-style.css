@@ -61,7 +61,6 @@ body {
 
 a {
 	color: var(--text-color);
-	text-decoration: none;
 }
 
 a:visited{
